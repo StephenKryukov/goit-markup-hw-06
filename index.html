@@ -39,7 +39,7 @@
 				</li>
 				<li class="item">
 					<a href="tel:+380961111111" class="header-tel">
-						<svg class="contact-icon" width="16" height="16">
+						<svg class="contact-icon" width="10" height="16">
 							<use href="./images/icons/icons.svg#tel"></use>
 						</svg>+38 096 111 11 11
 					</a>
@@ -301,35 +301,35 @@
 					<h2 class="section-title">Постоянные клиенты</h2>
 						<div>
 							<ul class="clients">
-								<li class="social-button">
+								<li class="company-button">
 									<a class="clients-button" href="/" aria-label="Company 1">
 										<svg class="clients-icon" width="106" height="60">
 											<use href="./images/icons/icons.svg#client1"></use>
 										</svg>
 									</a>
 								</li>
-								<li class="social-button">
+								<li class="company-button">
 									<a class="clients-button" href="/" aria-label="Company 2">
 										<svg class="clients-icon" width="106" height="60">
 											<use href="./images/icons/icons.svg#client2"></use>
 										</svg>
 									</a>
 								</li>
-								<li class="social-button">
+								<li class="company-button">
 									<a class="clients-button" href="/" aria-label="Company 3">
 										<svg class="clients-icon" width="106" height="60">
 											<use href="./images/icons/icons.svg#client3"></use>
 										</svg>
 									</a>
 								</li>
-								<li class="social-button">
+								<li class="company-button">
 									<a class="clients-button" href="/" aria-label="Company 4">
 										<svg class="clients-icon" width="106" height="60">
 											<use href="./images/icons/icons.svg#client4"></use>
 										</svg>
 									</a>
 								</li>
-								<li class="social-button">
+								<li class="company-button">
 									<a class="clients-button" href="/" aria-label="Company 5">
 										<svg class="clients-icon" width="106" height="60">
 											<use href="./images/icons/icons.svg#client5"></use>
@@ -351,6 +351,35 @@
 	<!-- Модальное окно -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
+				<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+				<form class="modal-form">
+					<ul>
+						<li class="form-field">
+								<label for="name" class="title">Имя</label>
+								<input type="text"name="name" id="name">
+						</li>
+						<li class="form-field">
+								<label for="tel" class="title">Телефон</label>
+								<input type="tel" name="tel" id="tel">
+						</li>
+						<li class="form-field">
+								<label for="mail" class="title">Почта</label>
+								<input type="email" name="mail" id="mail">
+						</li>
+						<li class="form-field">
+								<label for="comment" class="title">Комментарий</label>
+								<textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+						</li>
+						</ul>
+					<div class="modal-checkbox">
+						<input type="checkbox" name="policy" id="policy">
+						<label for="policy">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span>
+						</label>
+					</div>
+					<button type="submit">Отправить</button>
+				</form>
+
+
 				<button type="button" class="close-button" aria-label="Close Icon" data-modal-close>
 					<svg class="icon" width="18" height="18">
 						<use href="./images/icons/icons.svg#close-backdrop"></use>
@@ -432,6 +461,5 @@
 	</footer>
 	
 	<script src="./js/modal.js"></script>
-	
 	</body>
 	</html>
