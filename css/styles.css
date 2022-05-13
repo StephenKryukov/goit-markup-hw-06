@@ -449,9 +449,12 @@ nav {
 	margin-bottom: 40px;
 }
 .modal-form ul {
+	margin-top: 0;
+	margin-bottom: 20px;
 	padding-left: 0;
 }
 .form-field {
+		position: relative;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 10px;
@@ -469,6 +472,12 @@ nav {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 }
+.modal-icon {
+	position: absolute;
+	bottom: 11px;
+	left: 12px;
+	fill: currentColor;
+}
 .form-field textarea {
 	height: 120px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -479,17 +488,44 @@ nav {
 	padding-left: 12px;
 	height: 120px;
 	resize: none;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
 }
 .form-field:last-child {
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 .modal-checkbox {
+	position: relative;
 	margin-bottom: 30px;
 }
 .modal-checkbox label {
+	display: flex;
+	flex-direction: row;
+	margin-left: 36px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
+}
+.modal-checkbox input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.modal-checkbox .link {
+	text-decoration: underline;
+	color: var(--accent-color);
+}
+.modal-checkbox .icon {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translate(0, -50%);
 }
 .modal-form button {
 	width: 200px;
