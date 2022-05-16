@@ -539,9 +539,11 @@ nav {
 	border-radius: 2px;
 	background-color: var(--accent-color);
 	background-size: contain;
-	background-image: url(../images/icons/all/checkbox-checked.svg);
 	background-origin: border-box;
 	fill: transparent;
+}
+.modal-checkbox input:checked+.icon+.icon-checked {
+	visibility: visible;
 }
 .modal-checkbox .link {
 	text-decoration: underline;
@@ -552,6 +554,13 @@ nav {
 	left: 12px;
 	top: 50%;
 	transform: translate(0, -50%);
+}
+.modal-checkbox .icon-checked {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translate(0, -50%);
+	visibility: hidden;
 }
 .modal-form button {
 	width: 200px;
